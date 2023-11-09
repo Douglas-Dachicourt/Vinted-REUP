@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import logo from "/src/img/vinted.png"
 
 const Header = ()=>{
@@ -5,7 +6,9 @@ const Header = ()=>{
 
     <div className="container header-style">
       <div>
-        <img src={logo} alt="" />
+        <Link to={"/"}>
+          <img src={logo} alt="" />
+        </Link>  
       </div>
       <div>
         <input className="recherche" type="text" placeholder="Recherche des articles" />
