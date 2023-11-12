@@ -83,6 +83,7 @@ gap: 15px;
   cursor: pointer;
 }
 
+
 .navigation .button-sell {
   margin-left: 50px;
   color: white;
@@ -308,12 +309,66 @@ object-fit: cover;
   margin:0 auto;
   width: 40vw;
   height: 70vh;
-  background-color: red;
   
+  
+}
+
+.signup h1{
+  font-size: 24px;
+  color: rgb(50, 46, 46);
+  margin-bottom: 10px;
 }
 
 .signup input {
 
-  height: 20px;
-  width: 300px;
+  height: 6%;
+  width: 45%;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  color: grey;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-bottom: 0.5px solid red;
 }
+
+
+.signup >  div{
+
+width: 45%;
+background-color: #fff;
+display: flex;
+justify-content: start;
+align-items: center;
+font-size: 16px;
+gap: 10px;
+color: rgb(50, 46, 46);
+
+
+}
+
+input.check{
+ height: 20px;
+ width: 20px;
+
+} 
+
+
+.signup button {
+  width: 45%;
+  height: 35px;
+  background-color: #2DB1BA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+/* ------- SIGNUP ------------- */
+
+/* .check {
+  display: flex;
+ 
+} */

@@ -2,9 +2,6 @@ import { useState } from "react"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
 
-
-
-
 const Login = ({ handleToken }) => {
 
     const [email, setEmail] = useState("")

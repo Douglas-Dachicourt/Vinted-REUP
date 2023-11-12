@@ -27,7 +27,7 @@ const Header = ({ handleToken, userToken }) => {
               <button>Se connecter</button>
             </Link> </> : <button onClick={() => {
               handleToken()
-            }}>Déconnexion</button>}
+            }} >Déconnexion</button>}
         <button className="button-sell">Vends tes articles</button>
       </div>
     </div>

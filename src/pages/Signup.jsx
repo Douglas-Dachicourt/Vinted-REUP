@@ -39,9 +39,14 @@ const Signup = ({ handleToken }) => {
         <input type="password" placeholder="password" value={password} onChange={(e) => {
             setPassword(e.target.value)
         }} />
-        <input type="checkbox" checked={newsletter} onChange={() => {
-            setNewsletter(!newsletter)
-        }} />
+        <div>
+            <input className="check" type="checkbox" checked={newsletter} onChange={() => {
+                setNewsletter(!newsletter)
+            }} />
+            <p> S'incrire à notre Newsletter</p>
+        </div>
+
+
         <button type="submit">S'inscrire</button>
     </form>
     )
