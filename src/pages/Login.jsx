@@ -1,6 +1,7 @@
 import { useState } from "react"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Login = ({ handleToken }) => {
 
@@ -32,7 +33,9 @@ const Login = ({ handleToken }) => {
             value={password}
             onChange={(event) => { setPassword(event.target.value) }} />
         <button type="submit">Connexion</button>
+        <Link to={"/signup"} className="tosignup">Pas encore de compte? Inscris-toi ! </Link>
     </form>
+
 }
 
 export default Login

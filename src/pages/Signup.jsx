@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
+import { Link } from "react-router-dom"
 
 const Signup = ({ handleToken }) => {
 
@@ -45,10 +46,11 @@ const Signup = ({ handleToken }) => {
             }} />
             <p> S'incrire à notre Newsletter</p>
         </div>
-
-
+        <p className="conditions">En m'inscrivant je confirme avoir lu et accepté les Termes & Conditions et Politique de Confidentialité de Vinted. Je confirme avoir au moins 18 ans.</p>
         <button type="submit">S'inscrire</button>
+        <Link to={"/login/"} className="tologin">Tu as déjà un compte? Connecte-toi !</Link>
     </form>
+
     )
 }
 
