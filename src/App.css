@@ -72,7 +72,7 @@ padding-left: 35px;
 gap: 15px;
 }
 
-.navigation > button {
+.navigation button {
   height: 30px;
   width: 117px;
   border-radius: 5px;
@@ -297,4 +297,23 @@ object-fit: cover;
   border-radius: 5px;
   cursor: pointer;
 
+}
+
+.signup {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin:0 auto;
+  width: 40vw;
+  height: 70vh;
+  background-color: red;
+  
+}
+
+.signup input {
+
+  height: 20px;
+  width: 300px;
 }
