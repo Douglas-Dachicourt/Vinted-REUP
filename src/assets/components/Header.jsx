@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import logo from "/src/img/vinted.png"
 
-const Header = ({ handleToken, userToken }) => {
+const Header = ({ handleToken, userToken, search, setSearch }) => {
   return <header>
 
     <div className="container header-style">
@@ -11,11 +11,13 @@ const Header = ({ handleToken, userToken }) => {
         </Link>
       </div>
       <div>
-        <input className="recherche" type="text" placeholder="Recherche des articles" />
-        {/* <div className="tri">
-          <p>Trier par prix : </p>
-          <p>Prix entre : </p>
-        </div> */}
+        <input className="recherche"
+          type="text"
+          placeholder="... Recherche des articles"
+          value={search}
+          onChange={(event) => { setSearch(event.target.value) }}
+        />
+
       </div>
 
       <div className="navigation">
@@ -28,7 +30,9 @@ const Header = ({ handleToken, userToken }) => {
             </Link> </> : <button onClick={() => {
               handleToken()
             }} >Déconnexion</button>}
-        <button className="button-sell">Vends tes articles</button>
+        <Link to={"/publish/"}>
+          <button className="button-sell">Vends tes articles</button>
+        </Link>
       </div>
     </div>
   </header>
