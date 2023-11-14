@@ -26,7 +26,7 @@ header img {
   height: 40%;
   margin-bottom: 5px;
   margin: 0 5px;
-  padding-left: 40px;
+  padding-left: 10px;
   border-radius: 5px;
   border : 0.5px solid gray;
   
@@ -300,6 +300,17 @@ object-fit: cover;
 
 }
 
+.start-to-sell{
+  width: 240px;
+  height: 45px;
+  background-color: #2DB1BA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 .signup {
   
   display: flex;
@@ -307,8 +318,9 @@ object-fit: cover;
   justify-content: space-evenly;
   align-items: center;
   margin:0 auto;
-  width: 40vw;
-  height: 75vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ECEDEE;
   
   
 }
@@ -322,7 +334,7 @@ object-fit: cover;
 .signup input {
 
   height: 6%;
-  width: 45%;
+  width: 25%;
   border-radius: 5px;
   padding-left: 10px;
   padding-bottom: 5px;
@@ -330,14 +342,14 @@ object-fit: cover;
   font-size: 16px;
   border: none;
   outline: none;
-  border-bottom: 0.5px solid red;
+  border-bottom: 0.5px solid #2DB1BA;
 }
 
 
 .signup >  div{
 
-width: 45%;
-background-color: #fff;
+width: 25%;
+background-color: #ECEDEE;
 display: flex;
 justify-content: start;
 align-items: center;
@@ -356,8 +368,8 @@ input.check{
 
 
 .signup button {
-  width: 45%;
-  height: 35px;
+  width: 25%;
+  height: 38px;
   background-color: #2DB1BA;
   color: white;
   border: none;
@@ -369,7 +381,7 @@ input.check{
 .signup .conditions {
   margin-top: -30px;
   /* background-color: red; */
-  width: 45%;
+  width: 25%;
   font-size: 14px;
   color: rgb(130, 127, 127);
   padding-left: 20px;
@@ -389,4 +401,43 @@ input.check{
   text-decoration: none;
   margin-top: -65px;
   font-size: 14px;
+}
+
+
+.publish {
+  background-color:#ECEDEE;
+  height: 130vh;
+
+}
+
+.publish-form{
+
+
+  background-color: white;
+  display: flex; 
+  flex-direction: column ;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height:120vh ;
+  margin: 0 auto;
+    
+ 
+}
+
+.publish-form input {
+  width: 600px;
+  border: none;
+
+}
+
+.publish-option{
+  width: 25%;
+  height: 38px;
+  background-color: #2DB1BA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
 }

@@ -33,7 +33,6 @@ const Offer = () => {
             <div className="pic">
                 <img src={data.product_image.secure_url} alt="" />
                 <div>
-                    <img src={data.product_pictures.secure_url} alt="" />
                 </div>
             </div>
             <aside className="main-offer">
@@ -55,7 +54,10 @@ const Offer = () => {
                         <p>{data.product_description}</p>
                     </div>
                     <div className="avatar">
-                        <img src={data.owner.account.avatar.secure_url} alt="" />
+                        {data.owner.account.avatar && (
+                            <img src={data.owner.account.avatar.secure_url} alt="" />
+                        )}
+
                         <p>{data.owner.account.username}</p>
                     </div>
                     <div>

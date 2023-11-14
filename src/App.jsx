@@ -8,6 +8,9 @@ import Header from "./assets/components/Header";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Publish from "./pages/Publish";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faMagnifyingGlass, faListAlt } from '@fortawesome/free-solid-svg-icons';
+library.add(faMagnifyingGlass, faListAlt);
 
 
 
@@ -39,7 +42,7 @@ function App() {
           <Route path="/offers/:id" element={<Offer />} />
           <Route path="/signup/" element={<Signup handleToken={handleToken} />} />
           <Route path="/login/" element={<Login handleToken={handleToken} />} />
-          <Route path="/publish/" element={<Publish handleToken={handleToken} />} />
+          <Route path="/publish/" element={<Publish userToken={userToken} />} />
         </Routes>
       </Router>
     </>
